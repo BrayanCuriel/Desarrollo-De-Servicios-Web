@@ -39,7 +39,7 @@ Ejercicio 12:
 Usamos reduce para sumar todos los números en un arreglo, uno por uno, y obtener un solo resultado final: el total.
 
 Ejercicio 13:
-Usamos setTimeout para esperar 3 segundos antes de mostrar un mensaje en consola. Es útil para hacer cosas con tiempo.
+Usamos setTimeout para esperar 3 segundos antes de mostrar un mensaje en consola.
 
 Ejercicio 14:
 Creamos una promesa que espera 2 segundos y luego muestra un mensaje. Usamos .then para decir qué hacer cuando la promesa se cumple.
