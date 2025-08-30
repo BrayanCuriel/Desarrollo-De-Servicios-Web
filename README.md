@@ -48,7 +48,7 @@ Ejercicio 15:
 Usamos async y await para esperar el resultado de una promesa de forma más clara y ordenada, sin usar .then.
 
 Ejercicio 16:
-Creamos una función que revisa si un texto tiene la forma de un correo electrónico. Usamos una regla especial llamada expresión regular para hacer la verificación.
+no lo hicimos.
 
 Ejercicio 17:
 Tomamos un texto y lo convertimos a mayúsculas con .toUpperCase(), y luego eliminamos la coma usando .replace().
@@ -60,4 +60,4 @@ Ejercicio 19:
 Usamos fetch para pedir información de una página web. Cuando llega la respuesta, la convertimos en datos y la mostramos en consola.
 
 Ejercicio 20:
-Creamos un arreglo de tareas y funciones para agregar, eliminar y marcar tareas como completadas. Usamos métodos como push, filter y forEach para modificar el arreglo según lo que queremos hacer.
+no nos salio el marcar, esta imcompleto, solo crea y elimina.
