@@ -1,16 +1,10 @@
-const express = require('express');
-const userRoutes=require('./routes/users.routes');
-
+// SRC/app.js
+const express = require("express");
 const app = express();
-app.use(express.json()); //json
+const usersRouter = require("./routes/users.routes");
 
-app.get("/",(req,res)=>{
-    res.status(200).send("ok");
-});
+app.use(express.json()); 
+app.use("/users", usersRouter); 
 
-app.use('/api/users',userRoutes);
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`server running on http://localhost:${PORT}`);
-});
+const PORT = 3000;
+app.listen(PORT, () => console.log(`✅ Server running on http://localhost:${PORT}`));
