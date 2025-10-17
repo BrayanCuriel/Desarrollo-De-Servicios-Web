@@ -1,8 +1,8 @@
-const jvt = require('jsonwebtoken');
-const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
 const User = require('../models/user.model');
 
-const JVT_SECRET = process.env.JVT_SECRET || 'hola123';
+const JWT_SECRET = process.env.JWT_SECRET || 'hola123';
 
 async function register(req, res) {
     const {username, password} = req.body;
@@ -29,6 +29,11 @@ async function login(req, res) {
     if(!match) {
         return res.status(401).json({message: 'Invalid credentials'});
     }
-    const token = jvt.sign({id: user.id, username: user.username}, JVT_SECRET, {expiresIn: '1m'});
+    const token = jwt.sign({id: user.id, username: user.username}, JWT_SECRET, {expiresIn: '1m'});
     res.status(200).json({token});
 }
+
+module.exports = {
+    register,
+    login
+};
