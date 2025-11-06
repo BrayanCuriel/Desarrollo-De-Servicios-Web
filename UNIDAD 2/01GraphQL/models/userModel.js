@@ -13,10 +13,10 @@ function getById(id){
 
 function create (name,email,age){
     const newUser={
-        id: (user.legth + 1).toString(),
+        id: (users.length + 1).toString(),
         name: name,
         email: email,
-        age: age 
+        age: age
     }
     users.push(newUser);
     return newUser;
